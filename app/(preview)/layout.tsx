@@ -8,7 +8,7 @@ const geist = Geist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ai-sdk-preview-pdf-support.vercel.app"),
-  title: "PDF Support Preview",
+  title: "Quizion Ai",
   description: "Experimental preview of PDF support with the AI SDK",
 };
 
@@ -19,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`${geist.className}`}>
+      <head>
+        <link rel="icon" type="image/svg+xml" href="/asset/LogoVector.svg" />
+      </head>
       <body>
         <ThemeProvider attribute="class" enableSystem forcedTheme="dark">
           <Toaster position="top-center" richColors />
